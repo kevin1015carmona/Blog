@@ -1,0 +1,230 @@
+@media (max-width: 1080px) {
+  #div_mapa > :first-child {
+    font-size: 180%;
+  }
+  #especificaciones > :first-child {
+    font-size: 150%;
+  }
+  #title_sponsors > p {
+    font-size: 87%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #title_sponsors > p {
+    font-size: 80%;
+  }
+  #Formacion,
+  #Blog,
+  #Contacto {
+    margin-left: 2%;
+  }
+  #especificaciones > :first-child {
+    font-size: 140%;
+  }
+}
+
+@media (max-width: 912px) {
+  #Formacion,
+  #Blog,
+  #Contacto {
+    margin-left: 2%;
+  }
+  #title_sponsors > p {
+    font-size: 70%;
+  }
+  #social_title {
+    font-size: 130%;
+  }
+  .Contenido_Articulos {
+    font-size: 90%;
+  }
+  #especificaciones > :first-child {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Inicio {
+    margin-left: 5%;
+  }
+  #icono > div > h1,
+  #icono > div > h2 {
+    font-size: 100%;
+  }
+
+  #Desarrollo_Web,
+  #Sistemas_Operativos,
+  #Hardware,
+  #Redes_Internet,
+  #Bases_Datos {
+    font-size: 65%;
+  }
+  .Contenido_Articulos {
+    font-size: 86%;
+  }
+  .icon {
+    margin-left: -16%;
+  }
+  #title_sponsors {
+    font-size: 125%;
+  }
+
+  #div_mapa > :first-child {
+    font-size: 142%;
+  }
+
+  #especificaciones > :first-child {
+    font-size: 110%;
+  }
+
+  .img {
+    height: 10%;
+    width: 11%;
+  }
+
+  #optimized {
+    font-size: 130%;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 500px) {
+  #icono {
+    font-size: 15px;
+  }
+  #Inicio,
+  #Formacion,
+  #Blog,
+  #Contacto {
+    margin-left: 2%;
+    font-size: 12px;
+  }
+
+  body > header > ul > li {
+    font-size: 13px;
+  }
+  #banner {
+    font-size: 13px;
+  }
+
+  #cuerpo > div > h1 {
+    font-size: 37px;
+  }
+
+  #Desarrollo_Web,
+  #Sistemas_Operativos,
+  #Hardware,
+  #Redes_Internet,
+  #Bases_Datos {
+    font-size: 37%;
+    height: 100px;
+    width: 34%;
+    margin-left: 13%;
+    margin-top: 5%;
+  }
+
+  .letra_tarjetas > :last-child {
+    color: white;
+  }
+
+  #Central {
+    margin-top: 750px;
+    width: 83%;
+    height: 1050px;
+  }
+
+  aside {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+  }
+
+  .icon {
+    margin-left: -10%;
+  }
+
+  #buscar_title,
+  #login_title {
+    font-size: 120%;
+  }
+
+  #login > form > div > input {
+    margin-left: 10px;
+  }
+  #login > div {
+    font-size: 13px;
+  }
+  #social_title {
+    font-size: 110%;
+  }
+
+  #Ultimos_Articulos > h1 {
+    font-size: 20px;
+  }
+  .Titulos_Articulos > a {
+    font-size: 17px;
+  }
+
+  .Contenido_Articulos {
+    font-size: 65%;
+    margin-top: 17%;
+  }
+
+  .Fecha_Articulos {
+    font-size: 70%;
+  }
+
+  #Footer {
+    height: 220px;
+  }
+
+  #Footer > :first-child {
+    margin-left: 3%;
+  }
+
+  #Menu {
+    padding-top: 10%;
+    font-size: 15px;
+  }
+  #Lista_Menu > ul > li {
+    margin-left: 0%;
+  }
+  #Lista_Menu > ul > li > a {
+    font-size: 15px;
+  }
+
+  #div_mapa {
+    width: 40%;
+    font-size: 90%;
+  }
+
+  #div_mapa > :first-child {
+    font-size: 100%;
+  }
+
+  #mapa {
+    height: 42%;
+  }
+
+  #especificaciones {
+    margin-left: 3%;
+  }
+
+  #especificaciones > :first-child,
+  #optimized {
+    width: 115%;
+    font-size: 60%;
+  }
+
+  #author {
+    width: 115%;
+    height: 5%;
+    font-size: 14px;
+  }
+  #especificaciones > :last-child,
+  #especificaciones > :last-child > a {
+    font-size: 9px;
+  }
+}
