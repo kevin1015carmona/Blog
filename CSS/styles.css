@@ -32,21 +32,37 @@
 body {
   background-image: url(../img/pattern.png);
   width: 100%;
-  height: 100%;
+  height: 2000px;
+  display: grid;
+  grid-template-rows: 3% 6% 20% 58% 13%;
 }
 
 /*EMPIEZA MAQUETACION DE LA CABECERA*/
 #header {
   width: 100%;
-  height: 60px;
   background-color: black;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
 }
 
-body > header > ul > li {
+header > section {
   color: white;
   font-size: 20px;
   text-transform: uppercase;
-  list-style: none;
+  border: 1px grey solid;
+  height: 70%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  box-shadow: 0px 20px 50px -8px #ffffff;
+}
+
+header > section > a {
+  text-decoration: none;
+  color: white;
 }
 
 .gear {
@@ -58,39 +74,19 @@ body > header > ul > li {
   float: left;
 }
 
-#icono > div > h1 {
-  margin-left: 12%;
-}
-
 #icono {
+  color: white;
   float: left;
-  margin-left: 10%;
-  margin-top: 3px;
-  height: 40px;
-  width: 20%;
+  margin-left: 5%;
+  height: 100%;
+  width: 17%;
   text-align: center;
   background-color: rgba(0, 131, 238, 0.795);
-  padding-top: 10px;
   font-size: 23px;
   overflow: hidden;
-}
-
-#icono > div > h1 {
-  animation-name: rotate;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  float: left;
-  font-size: 35px;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #icono:hover {
@@ -127,49 +123,19 @@ body > header > ul > li {
   }
 }
 
-#Inicio {
-  margin-left: 20%;
-  margin-top: 1%;
-  float: left;
-}
-
-#Inicio > a {
-  text-decoration: none;
-  color: white;
-}
-
 #Blog {
-  margin-left: 5%;
-  margin-top: 1%;
+  margin-left: 15%;
   float: left;
-}
-
-#Blog > a {
-  text-decoration: none;
-  color: white;
 }
 
 #Portafolio {
-  margin-left: 5%;
-  margin-top: 1%;
   float: left;
-}
-
-#Portafolio > a {
-  text-decoration: none;
-  color: white;
 }
 
 #Contacto {
-  margin-left: 5%;
-  margin-top: 1%;
   float: left;
 }
 
-#Contacto > a {
-  text-decoration: none;
-  color: white;
-}
 /*tERMINA MAQUETACIONDE LA CABECERA*/
 
 /*EMPIEZA MAQUETACION DEL CUERPO DE LA PAGINA*/
@@ -178,11 +144,11 @@ body > header > ul > li {
 #contenedor_banner {
   box-shadow: 0 0 2px 1px grey;
   width: 80%;
-  height: 100px;
-  margin-top: 20px;
+  margin-top: 1%;
   margin-left: 10%;
   border: white solid 10px;
   overflow: hidden;
+  grid-row: 2/3;
 }
 
 #banner {
@@ -251,6 +217,10 @@ body > div > div > p {
   background-color: white;
   transition: all 300ms;
   overflow: hidden;
+}
+
+#cuerpo {
+  grid-row: 3/4;
 }
 
 #cuerpo > div:hover {
@@ -329,6 +299,11 @@ body > div > div > p {
 /*TERMINA MAQUETACION DEL CUERPO DE LA PAGINA*/
 
 /*INICIO DE LA BARRA LATERAL*/
+
+main {
+  margin-top: 5%;
+}
+
 aside {
   width: 20%;
   height: 500px;
@@ -524,8 +499,7 @@ aside > div > div > form > :first-child,
 /*FIN DE LA PARTE CENTRAL DE LA PAGINA*/
 /*INICIO DEL PIE DE PAGINA*/
 #Footer {
-  margin-top: 5%;
-  height: 400px;
+  grid-row: 5/6;
   width: 100%;
   background-color: black;
 }
@@ -576,36 +550,6 @@ aside > div > div > form > :first-child,
   100% {
     transform: translateX(50%);
   }
-}
-
-#div_mapa {
-  width: 30%;
-  height: 100%;
-  float: left;
-  margin-left: 5%;
-}
-
-#div_mapa > :first-child {
-  width: 100%;
-  height: 8%;
-  background-color: rgb(223, 222, 222);
-  text-align: center;
-  padding-top: 5%;
-  font-size: 200%;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 10px;
-}
-
-#mapa {
-  height: 100%;
-  width: 100%;
-  max-height: 330px;
-}
-
-#mapa > :first-child {
-  width: 100%;
-  height: 200%;
-  max-height: 330px;
 }
 
 #especificaciones {
