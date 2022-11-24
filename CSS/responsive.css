@@ -2,15 +2,9 @@
   #especificaciones > :first-child {
     font-size: 150%;
   }
-  #title_sponsors > p {
-    font-size: 87%;
-  }
 }
 
 @media (max-width: 1024px) {
-  #title_sponsors > p {
-    font-size: 80%;
-  }
   #Formacion,
   #Blog,
   #Contacto {
@@ -26,9 +20,6 @@
   #Blog,
   #Contacto {
     margin-left: 2%;
-  }
-  #title_sponsors > p {
-    font-size: 70%;
   }
   #social_title {
     font-size: 130%;
@@ -59,9 +50,6 @@
   }
   .icon {
     margin-left: -16%;
-  }
-  #title_sponsors {
-    font-size: 125%;
   }
 
   #especificaciones > :first-child {
