@@ -25,10 +25,6 @@
   padding: 0px;
 }
 
-.clear {
-  clear: both;
-}
-
 body {
   background-image: url(../img/pattern.png);
   width: 100vw;
@@ -39,15 +35,22 @@ body {
 }
 
 /*EMPIEZA MAQUETACION DE LA CABECERA*/
-#header {
-  width: 100%;
+
+#sections {
   background-color: black;
+  width: 100%;
   grid-row: 1/2;
   display: flex;
   align-items: center;
 }
 
-header > section {
+li {
+  list-style: none;
+}
+
+#Blog,
+#Portafolio,
+#Contacto {
   color: black;
   font-size: 20px;
   text-transform: uppercase;
@@ -58,7 +61,6 @@ header > section {
   align-items: center;
   justify-content: center;
   margin-left: 5%;
-
   box-shadow: inset 0px 0px 50px 5px #ffffff;
 }
 
@@ -71,11 +73,11 @@ header > section {
   }
 }
 
-header > section:hover {
+#sections > section:hover {
   animation: sections 0.5s forwards;
 }
 
-header > section > a {
+#sections > section > a {
   text-decoration: none;
   color: white;
 }
@@ -93,7 +95,7 @@ header > section > a {
   color: white;
   float: left;
   margin-left: 5%;
-  height: 100%;
+  height: 80%;
   width: 17%;
   text-align: center;
   background-color: rgba(0, 131, 238, 0.795);
@@ -158,9 +160,6 @@ header > section > a {
 /*INICIO MAQUETACION DEL BANNER*/
 #contenedor_banner {
   box-shadow: 0 0 2px 1px grey;
-  width: 80%;
-  margin-top: 1%;
-  margin-left: 10%;
   border: white solid 10px;
   overflow: hidden;
   grid-row: 2/3;
@@ -217,96 +216,12 @@ body > div > div > p {
 
 /*INICIA MAQUETACION DE LAS TARJETAS*/
 
-#Desarrollo_Web,
-#Sistemas_Operativos,
-#Hardware,
-#Redes_Internet,
-#Bases_Datos {
-  height: 80%;
-  width: 14%;
-  box-shadow: 0 0 2px 1px grey;
-  float: left;
-  font-size: 75%;
-  text-align: center;
-  font-family: "TrebuchetMS";
-  padding-top: 20px;
-  background-color: white;
-  transition: all 300ms;
-  overflow: hidden;
-}
-
-#cuerpo {
-  grid-row: 3/4;
-}
-
-#cuerpo > div:hover {
-  background-color: black;
-}
-
-#Sistemas_Operativos,
-#Hardware,
-#Redes_Internet,
-#Bases_Datos {
-  margin-left: 3%;
-}
-
-#Desarrollo_Web {
-  margin-left: 10%;
-}
-
-#cuerpo > div > h1 {
-  font-size: 50px;
-  display: block;
-}
-
-#cuerpo > div:hover > h1 {
-  font-size: 70px;
-  color: rgb(64, 82, 241);
-  animation: showIcon 300ms linear;
-}
-
 @keyframes showIcon {
   0% {
     transform: translateY(-200%);
   }
   100% {
     transform: translateY(0%);
-  }
-}
-
-.letra_tarjetas > h1 {
-  color: rgb(64, 82, 241);
-  margin-top: 15%;
-  margin-bottom: 25%;
-}
-
-#cuerpo > div:hover > .letra_tarjetas > h1 {
-  animation: showCategory 400ms linear;
-}
-
-@keyframes showCategory {
-  0% {
-    transform: translateY(-150%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-.letra_tarjetas > h2 {
-  color: rgb(64, 82, 241);
-}
-
-#cuerpo > div:hover > .letra_tarjetas > h2 {
-  animation: showDescription 400ms linear;
-}
-
-@keyframes showDescription {
-  0% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0%);
   }
 }
 
@@ -387,42 +302,6 @@ aside > div > div > form > :first-child,
   color: black;
 }
 
-#Social {
-  background-color: white;
-  margin-bottom: 10%;
-  width: 100%;
-  box-shadow: grey 0 6px 5px 0;
-  overflow: hidden;
-}
-
-#Social > div > a {
-  color: black;
-  font-size: 200%;
-  margin-left: 0%;
-  float: left;
-}
-
-.socialname {
-  width: 100%;
-  height: 100%;
-  color: white;
-}
-
-#Social > div {
-  margin-top: 6%;
-}
-
-#Social > div > div {
-  margin-left: 30%;
-}
-
-#Social > div:hover > div {
-  animation: showSocial 300ms linear;
-  background-color: black;
-  color: rgb(64, 82, 241);
-  font-size: 22px;
-}
-
 @keyframes showSocial {
   0% {
     transform: translateX(-200%);
@@ -459,12 +338,15 @@ aside > div > div > form > :first-child,
   background-color: white;
 }
 
-.Titulos_Articulos > a,
 .Contenido_Articulos > a {
   text-decoration: none;
 }
 
-.Titulos_Articulos > a {
+.encabezado {
+  display: flex;
+}
+
+.encabezado > h3 {
   width: 60%;
   text-decoration: none;
   color: blue;
@@ -491,7 +373,7 @@ aside > div > div > form > :first-child,
 /*INICIO DEL PIE DE PAGINA*/
 #Footer {
   padding: 0.5% 0% 0% 0%;
-  grid-row: 5/6;
+  grid-row: 4/5;
   width: 100vw;
   max-width: 100vw;
   background-color: black;
