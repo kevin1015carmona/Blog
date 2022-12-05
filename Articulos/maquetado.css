@@ -11,7 +11,7 @@ body {
   height: 800px;
   width: 100%;
   display: grid;
-  grid-template-rows: 6% 86% 8%;
+  grid-template-rows: 6% 88% 6%;
 }
 
 header {
@@ -39,14 +39,29 @@ header {
 
 main {
   width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  margin-top: 2%;
+  justify-items: center;
+}
+
+#encabezado {
+  width: 100%;
+  grid-row: 1/2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#img_titulo {
+  height: 100%;
+  width: 20%;
 }
 
 #titulo_articulo {
-  height: 10%;
-  width: 95%;
+  height: 50%;
+  width: 55%;
   margin-top: 2%;
   display: flex;
   border: 2px gray solid;
@@ -59,7 +74,8 @@ main {
 }
 
 #cuerpo_articulo {
-  height: 86%;
+  grid-row: 2/3;
+  height: 100%;
   width: 90%;
   line-height: 150%;
   margin-top: 2%;
