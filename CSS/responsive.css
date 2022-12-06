@@ -259,11 +259,16 @@
     width: 11vw;
     margin-left: 45vw;
   }
+
+  .Articulos {
+    width: 85%;
+  }
+
   .Contenido_Articulos > p {
     font-size: 13px;
   }
   #social > a {
     height: 80%;
-    width: 6%;
+    width: 8%;
   }
 }
