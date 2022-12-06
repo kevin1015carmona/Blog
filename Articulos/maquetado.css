@@ -8,10 +8,10 @@ html {
 }
 
 body {
-  height: 1000px;
+  height: 1500px;
   width: 100%;
   display: grid;
-  grid-template-rows: 6% 88% 6%;
+  grid-template-rows: 4% 92% 4%;
 }
 
 header {
@@ -41,7 +41,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 15% 85%;
   margin-top: 2%;
   justify-items: center;
 }

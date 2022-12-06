@@ -5,7 +5,7 @@
   main {
     margin-top: 5%;
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 8% 92%;
     grid-template-columns: 100%;
     padding: 0% 2% 0% 2%;
   }
@@ -30,8 +30,9 @@
 
 @media (min-width: 0px) and (max-width: 800px) {
   body {
-    grid-template-rows: 10% 4% 78% 8%;
+    grid-template-rows: 10% 8% 77% 5%;
     height: 1700px;
+    justify-items: center;
   }
   #sections {
     grid-column: 1/3;
@@ -44,11 +45,16 @@
   #Contacto {
     display: none;
   }
+
+  #button_menu {
+    display: grid;
+  }
+
   button {
     background-color: #888787;
     height: 80%;
-    width: 12vw;
-    margin-left: 43vw;
+    width: 7vw;
+    margin-left: 50vw;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 100%;
@@ -154,9 +160,14 @@
   }
 
   #header {
+    width: 100%;
     display: grid;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 30% 70%;
     grid-template-columns: 50% 50%;
+  }
+
+  #sections {
+    height: 100%;
   }
 
   #menu {
@@ -188,16 +199,32 @@
     animation: li_click 0.5s forwards;
   }
 
-  main {
-    margin-top: 10%;
+  li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
   }
+
+  main {
+    margin-top: 1%;
+  }
+
+  #contenedor_banner {
+    margin-top: 4%;
+    height: 50%;
+    width: 80%;
+  }
+
   #Central {
+    width: 100%;
     grid-column: 1/2;
     display: grid;
     grid-template-rows: 6% repeat(4, 22%);
+    justify-items: center;
   }
 
   #Ultimos_Articulos {
+    width: 85%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -212,6 +239,31 @@
     font-size: 23px;
   }
   .Articulos {
+    width: 75%;
     height: auto;
+    max-height: 90%;
+  }
+}
+
+@media (min-width: 391px) and (max-width: 550px) {
+  button {
+    width: 9vw;
+  }
+  .Contenido_Articulos > p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 390px) {
+  button {
+    width: 11vw;
+    margin-left: 45vw;
+  }
+  .Contenido_Articulos > p {
+    font-size: 13px;
+  }
+  #social > a {
+    height: 80%;
+    width: 6%;
   }
 }

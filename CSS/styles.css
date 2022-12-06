@@ -408,7 +408,7 @@ aside > div > div > form > :first-child,
 }
 
 #social {
-  height: 30%;
+  height: 50%;
   margin-top: 2%;
   display: flex;
   justify-content: space-around;
