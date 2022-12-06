@@ -59,6 +59,11 @@ main {
   width: 20%;
 }
 
+#img_titulo > img {
+  height: 100%;
+  width: 100%;
+}
+
 #titulo_articulo {
   height: 50%;
   width: 55%;
