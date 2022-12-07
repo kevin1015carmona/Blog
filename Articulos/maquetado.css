@@ -11,7 +11,7 @@ body {
   height: 1500px;
   width: 100%;
   display: grid;
-  grid-template-rows: 4% 92% 4%;
+  grid-template-rows: 50px 100% 50px;
 }
 
 header {
@@ -38,6 +38,7 @@ header {
 }
 
 main {
+  grid-row: 2/3;
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
@@ -80,7 +81,6 @@ main {
 
 #cuerpo_articulo {
   grid-row: 2/3;
-  height: 100%;
   width: 90%;
   line-height: 150%;
   margin-top: 2%;
@@ -89,9 +89,13 @@ main {
 
 footer {
   width: 100vw;
+  grid-row: 3/4;
   background-color: rgba(206, 206, 206, 0.381);
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 0%;
 }
 
 footer > a > img {
@@ -113,4 +117,64 @@ footer > h4 {
 footer > h5 {
   margin-left: 3%;
   font-size: 20px;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 0px) and (max-width: 1000px) {
+  #home {
+    margin-left: 4%;
+  }
+  #previous {
+    margin-left: 76%;
+  }
+  main {
+    grid-template-rows: 8% 92%;
+    margin-top: 5%;
+  }
+  #cuerpo_articulo {
+    line-height: 135%;
+  }
+}
+
+@media (max-width: 700px) {
+  #home,
+  #previous,
+  #next {
+    width: 6%;
+  }
+  #previous {
+    margin-left: 70%;
+  }
+  footer > a {
+    width: 10%;
+    height: 70%;
+  }
+  footer > h4 {
+    font-size: 17px;
+  }
+  footer > h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    grid-template-rows: 6% 94%;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    grid-template-rows: 4% 96%;
+  }
+
+  #home,
+  #previous,
+  #next {
+    width: 10%;
+  }
+  #previous {
+    margin-left: 55%;
+  }
 }
