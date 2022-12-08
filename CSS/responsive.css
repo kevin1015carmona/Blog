@@ -232,7 +232,7 @@
   }
 
   .encabezado > h3 {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   #Ultimos_Articulos > h1 {
@@ -241,7 +241,7 @@
   .Articulos {
     width: 75%;
     height: auto;
-    max-height: 90%;
+    max-height: 97%;
   }
 }
 
@@ -250,7 +250,7 @@
     width: 9vw;
   }
   .Contenido_Articulos > p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -265,8 +265,13 @@
   }
 
   .Contenido_Articulos > p {
+    font-size: 11px;
+  }
+
+  #author {
     font-size: 13px;
   }
+
   #social > a {
     height: 80%;
     width: 8%;

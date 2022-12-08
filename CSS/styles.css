@@ -359,7 +359,7 @@ aside > div > div > form > :first-child,
 }
 
 .encabezado > h3 {
-  width: 60%;
+  width: 75%;
   text-decoration: none;
   color: blue;
   font-size: 25px;
@@ -367,7 +367,7 @@ aside > div > div > form > :first-child,
 }
 
 .Fecha_Articulos {
-  width: 40%;
+  width: 25%;
   height: 35px;
   background-color: rgb(73, 72, 72);
   color: white;
