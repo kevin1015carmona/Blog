@@ -32,14 +32,14 @@ body {
   }
 }
 
-@media (min-width: 290px) and (max-width: 320px) {
+@media (min-width: 265px) and (max-width: 320px) {
   body {
     height: 2450px !important;
   }
 }
 
-@media (min-width: 0px) and (max-width: 289px) {
+@media (min-width: 228px) and (max-width: 264px) {
   body {
-    height: 1900px !important;
+    height: 2800px !important;
   }
 }
