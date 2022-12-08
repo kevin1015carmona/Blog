@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  height: 1500px;
+  height: 1200px;
   width: 100%;
   display: grid;
   grid-template-rows: 50px 100% 50px;
@@ -66,7 +66,8 @@ main {
 }
 
 #titulo_articulo {
-  height: 50%;
+  margin-left: 2vw;
+  height: auto;
   width: 55%;
   margin-top: 2%;
   display: flex;
@@ -120,6 +121,44 @@ footer > h5 {
 }
 
 /*RESPONSIVE*/
+@media (min-width: 550px) and (max-width: 800px) {
+  #cuerpo_articulo {
+    line-height: 130%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 549px) {
+  #cuerpo_articulo {
+    line-height: 130%;
+  }
+  h1 {
+    font-size: 21px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
 
 @media (min-width: 0px) and (max-width: 1000px) {
   #home {

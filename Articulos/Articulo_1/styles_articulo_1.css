@@ -1,19 +1,5 @@
-@media (max-width: 800px) {
-  #cuerpo_articulo {
-    line-height: 130%;
-  }
-  h2 {
-    font-size: 21px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  h4 {
-    font-size: 16px;
-  }
-  p {
-    font-size: 15px;
-  }
+body {
+  height: 1500px !important;
 }
 
 @media (min-width: 577px) and (max-width: 700px) {
