@@ -2,13 +2,13 @@ body {
   height: 1420px !important;
 }
 
-@media (min-width: 573px) and (max-width: 700px) {
+@media (min-width: 590px) and (max-width: 705px) {
   body {
     height: 1600px !important;
   }
 }
 
-@media (min-width: 550px) and (max-width: 572px) {
+@media (min-width: 550px) and (max-width: 589px) {
   body {
     height: 1740px !important;
   }
