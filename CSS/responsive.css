@@ -62,7 +62,7 @@
     justify-items: center;
   }
   button > div {
-    height: 23%;
+    height: 40%;
     width: 80%;
     background-color: gray;
   }
@@ -84,13 +84,13 @@
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(45deg) translate(8px, 7px);
+      transform: rotate(45deg) translate(9px, 8px);
     }
   }
 
   @keyframes menu_1_return {
     from {
-      transform: rotate(45deg) translate(8px, 7px);
+      transform: rotate(45deg) translate(9px, 8px);
     }
     to {
       transform: rotate(0deg);
@@ -232,7 +232,11 @@
   }
 
   .encabezado > h3 {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .Fecha_Articulos {
+    font-size: 15px;
   }
 
   #Ultimos_Articulos > h1 {

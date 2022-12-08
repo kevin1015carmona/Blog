@@ -155,6 +155,7 @@ li {
 
 #Portafolio {
   float: left;
+  margin-left: 35%;
 }
 
 #Contacto {
@@ -372,7 +373,10 @@ aside > div > div > form > :first-child,
   background-color: rgb(73, 72, 72);
   color: white;
   float: left;
-  font-size: 85%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Contenido_Articulos {
@@ -394,7 +398,7 @@ aside > div > div > form > :first-child,
 }
 
 #especificaciones {
-  height: 100%;
+  height: 95%;
   width: 100%;
 }
 
@@ -415,8 +419,8 @@ aside > div > div > form > :first-child,
 }
 
 #social > a {
-  height: 95%;
-  width: 8%;
+  height: 85%;
+  width: 6%;
 }
 
 #social > a > img {

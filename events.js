@@ -7,6 +7,8 @@ window.addEventListener("load", function () {
   let bar_3 = document.querySelector("#bar_3");
   let menu_check = false;
   let menu = document.querySelector("#menu");
+  let link_1 = document.querySelector("#link_1");
+  let link_2 = document.querySelector("#link_");
   button_menu.addEventListener("click", function () {
     if (menu_check === false) {
       menu.style.animation = "menu_expand 1s forwards";
