@@ -16,7 +16,7 @@ body {
 
 @media (min-width: 380px) and (max-width: 453px) {
   body {
-    height: 2000px;
+    height: 2000px !important;
   }
 }
 
