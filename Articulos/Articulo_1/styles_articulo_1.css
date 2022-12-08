@@ -22,12 +22,12 @@ body {
 
 @media (min-width: 295px) and (max-width: 379px) {
   body {
-    height: 2200px;
+    height: 2200px !important;
   }
 }
 
 @media (min-width: 0px) and (max-width: 294px) {
   body {
-    height: 2400px;
+    height: 2400px !important;
   }
 }
