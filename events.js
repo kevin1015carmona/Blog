@@ -1,7 +1,6 @@
 "use strict";
 
 window.addEventListener("load", function () {
-  alert("version mas reciente 2.0");
   let button_menu = document.getElementById("button_menu");
   let bar_1 = document.querySelector("#bar_1");
   let bar_2 = document.querySelector("#bar_2");
