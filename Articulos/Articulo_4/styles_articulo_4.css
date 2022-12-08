@@ -1,5 +1,15 @@
-#img_amlo {
-  height: 100%;
-  width: 100%;
-  float: left;
+body {
+  height: 1000px !important;
+}
+
+@media (min-width: 258px) and (max-width: 350px) {
+  body {
+    height: 1300px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 257px) {
+  body {
+    height: 1600px !important;
+  }
 }
