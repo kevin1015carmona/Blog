@@ -24,4 +24,10 @@ window.addEventListener("load", function () {
       menu_check = false;
     }
   });
+
+  //ANIMACIONES FORM
+  let enviar = document.querySelector("#Enviar");
+  enviar.addEventListener(this.onblur, function () {
+    enviar.style.animation = "boton_enviar 1s forwards";
+  });
 });

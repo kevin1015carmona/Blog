@@ -166,6 +166,47 @@
       </div>
     </main>
     <!--FIN DE LA PARTE CENTRAL DE LA PAGINA-->
+    <form id="form" action="" onsubmit="return false">
+      <h4>SUSCRIBETE A NUESRO NEWSLETTER</h4>
+      <label id="Nombre"> Nombre</label>
+      <input type="text" name="input_nombre" id="input_nombre" />
+      <div id="error_nombre">Introduce un nombre valido</div>
+      <label id="Apellido"> Apellido </label>
+      <input type="text" name="input_apellido" id="input_apellido" />
+      <div id="error_apellido">Introduce un Apellido valido</div>
+      <label id="Correo"> Correo </label>
+      <input type="text" name="input_correo" id="input_correo" />
+      <div id="error_correo">Introduce un correo valido</div>
+      <input type="submit" id="Enviar" value="Sucribirme" />
+      <div id="alerts_form">
+        <section id="correo_no_enviado">
+          <img src="img/no_enviado.png" alt="No Enviado" />
+          <h2>CORREO NO ENVIADO</h2>
+          <p>Por favor verifica tus datos y vuelve a intentarlo</p>
+          <input id="boton_revisar" type="button" value="Revisar" />
+        </section>
+        <section id="correo_enviado">
+          <img src="img/enviado.png" alt="Enviado" />
+          <h2>CONFIRMACIÓN ENVIADA</h2>
+          <p>En breve recibirás un correo de confirmacion</p>
+          <input id="boton_aceptar" type="button" value="Aceptar" />
+        </section>
+        <section id="correo_inscrito">
+          <img src="img/inscrito.png" alt="No Enviado" />
+          <h2>INSCRIPCION EXITOSA</h2>
+          <p>
+            Tu confirmacion a nuestro newsletter ha sido exitosa, cuando
+            tengamos nuevo contenido serás notificado
+          </p>
+          <p>
+            Te invito a seguirme en mi perfil de
+            <a href="https://www.linkedin.com/in/kevin-luna15/">Linkedin</a> y
+            en mi cuenta de
+            <a href="https://github.com/kevin1015carmona">GitHub</a>
+          </p>
+        </section>
+      </div>
+    </form>
     <!--TERMINA CUERPO DE LA PAGINA-->
     <!--INICIA PIE DE PAGINA-->
     <footer id="Footer">
@@ -186,5 +227,16 @@
     </footer>
     <!--FIN DEL PIE DE PAGINA-->
   </body>
+
+  <script src="correo.js"></script>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+
+  <script type="text/javascript">
+    emailjs.init("augsuHwTz9DPb4HSB");
+  </script>
 </html>
 <!--FIN DE LA PAGINA-->
