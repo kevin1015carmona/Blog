@@ -73,9 +73,12 @@ document.getElementById("form").addEventListener("submit", function (event) {
     correo_section.style.display = "flex";
     correo_enviado.style.display = "grid";
     let aceptar = document.getElementById("boton_aceptar");
+    let inputs = document.getElementById("section_inputs");
+
     aceptar.addEventListener("click", function () {
       correo_enviado.style.display = "none";
       correo_inscrito.style.display = "grid";
+      inputs.style.display = "none";
     });
   } else {
     correo_section.style.display = "flex";

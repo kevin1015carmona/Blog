@@ -1,11 +1,12 @@
 @media (min-width: 0px) and (max-width: 1000px) {
   body {
-    grid-template-rows: 10% 5% 77% 8%;
+    grid-template-rows: 7% 5% 65% 17% 6%;
   }
   main {
     margin-top: 5%;
     display: grid;
-    grid-template-rows: 8% 92%;
+    grid-template-rows: 8% 89%;
+    grid-row-gap: 3%;
     grid-template-columns: 100%;
     padding: 0% 2% 0% 2%;
   }
@@ -26,11 +27,15 @@
   #Central {
     grid-row: 2/3;
   }
+  form {
+    grid-template-rows: 10% 80%;
+    row-gap: 10%;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 800px) {
   body {
-    grid-template-rows: 10% 8% 77% 5%;
+    grid-template-rows: 8% 8% 62% 17% 5%;
     height: 1700px;
     justify-items: center;
   }
@@ -247,18 +252,103 @@
     height: auto;
     max-height: 97%;
   }
+
+  #error_nombre,
+  #error_apellido,
+  #error_correo {
+    font-size: 13px;
+  }
+
+  #correo_enviado,
+  #correo_no_enviado,
+  #correo_inscrito {
+    width: 65vw;
+    height: 98%;
+  }
+  .img_correo {
+    width: 27%;
+  }
+  #correo_enviado > p,
+  #correo_no_enviado > p,
+  #correo_inscrito > p {
+    font-size: 14px;
+  }
 }
 
-@media (min-width: 391px) and (max-width: 550px) {
+@media (min-width: 411px) and (max-width: 550px) {
   button {
     width: 9vw;
   }
   .Contenido_Articulos > p {
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 110%;
+  }
+  form {
+    grid-template-rows: 10% 85%;
+    row-gap: 5%;
+  }
+
+  #section_inputs {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 0vw 46vw 46vw 0vw;
+    grid-template-rows: 12% 11% 11% 12% 11% 11% 20%;
+    row-gap: 2%;
+    column-gap: 3vw;
+  }
+
+  #Correo {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  #input_correo {
+    grid-column: 2/5;
+    grid-row: 5/6;
+  }
+  #error_correo {
+    grid-column: 2/5;
+    grid-row: 6/7;
+  }
+  #Enviar {
+    grid-column: 2/5;
+    grid-row: 7/8;
+    margin-top: 1%;
+    height: 90%;
+  }
+  #alerts_form {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #correo_enviado,
+  #correo_no_enviado,
+  #correo_inscrito {
+    width: 80vw;
+    height: 95%;
+  }
+  #correo_enviado > h2,
+  #correo_no_enviado > h2,
+  #correo_inscrito > h2 {
+    font-size: 17px;
+  }
+  #correo_enviado > p,
+  #correo_no_enviado > p,
+  #correo_inscrito > p {
+    font-size: 14px;
+  }
+  .img_correo {
+    width: 33%;
+  }
+  #correo_no_enviado,
+  #correo_enviado {
+    grid-template-rows: 50% 15% 15% 20%;
+  }
+  #correo_inscrito {
+    grid-template-rows: 45% 20% 35%;
   }
 }
 
-@media (min-width: 0px) and (max-width: 390px) {
+@media (min-width: 0px) and (max-width: 410px) {
   button {
     width: 11vw;
     margin-left: 45vw;
@@ -269,7 +359,7 @@
   }
 
   .Contenido_Articulos > p {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   #author {
@@ -279,5 +369,83 @@
   #social > a {
     height: 80%;
     width: 8%;
+  }
+  form > h4 {
+    height: 70%;
+    font-size: 16px;
+  }
+  #Nombre,
+  #Apellido,
+  #Correo {
+    font-size: 15px;
+  }
+  #error_nombre,
+  #error_apellido,
+  #error_correo {
+    font-size: 11px;
+  }
+  form {
+    grid-template-rows: 10% 85%;
+    row-gap: 5%;
+  }
+
+  #section_inputs {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 0vw 46vw 46vw 0vw;
+    grid-template-rows: 12% 11% 9% 12% 11% 9% 24%;
+    row-gap: 2%;
+    column-gap: 3vw;
+  }
+
+  #Correo {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  #input_correo {
+    grid-column: 2/5;
+    grid-row: 5/6;
+  }
+  #error_correo {
+    grid-column: 2/5;
+    grid-row: 6/7;
+  }
+  #Enviar {
+    grid-column: 2/5;
+    grid-row: 7/8;
+    margin-top: 1%;
+    height: 60%;
+    width: 50%;
+    margin-left: 25%;
+  }
+  #alerts_form {
+    grid-row: 2/3;
+  }
+  #correo_enviado,
+  #correo_no_enviado,
+  #correo_inscrito {
+    width: 80vw;
+    height: 95%;
+  }
+  #correo_enviado > h2,
+  #correo_no_enviado > h2,
+  #correo_inscrito > h2 {
+    font-size: 16px;
+  }
+  #correo_enviado > p,
+  #correo_no_enviado > p,
+  #correo_inscrito > p {
+    font-size: 12px;
+  }
+  .img_correo {
+    width: 35%;
+  }
+  #correo_no_enviado,
+  #correo_enviado {
+    grid-template-rows: 50% 15% 15% 20%;
+  }
+  #correo_inscrito {
+    grid-template-rows: 45% 20% 35%;
   }
 }

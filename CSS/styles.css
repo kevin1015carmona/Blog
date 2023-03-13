@@ -393,109 +393,107 @@ aside > div > div > form > :first-child,
 
 form {
   display: grid;
-  grid-template-columns: 1vw 23vw 23vw 32vw 1vw;
-  grid-template-rows: 20% 10% 10% 15% 25%;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 75%;
+  row-gap: 15%;
+  justify-items: center;
+}
+
+#section_inputs {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 0vw 28vw 28vw 32vw 0vw;
+  grid-template-rows: 15% 15% 15% 45%;
   row-gap: 5%;
-  column-gap: 5vw;
+  column-gap: 3vw;
 }
 
 form > h4 {
-  grid-column: 2/5;
+  grid-column: 1/2;
   grid-row: 1/2;
   text-align: center;
-  border: black 2px double;
-  height: 50%;
+  border: rgb(109, 109, 109) 1.5px double;
+  height: 100%;
+  width: 90vw;
 }
 
 #Nombre {
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 #input_nombre {
   grid-column: 2/3;
-  grid-row: 3/4;
-  width: 80%;
+  grid-row: 2/3;
   height: 60%;
   background-color: #e5e5e5;
 }
 
 #error_nombre {
   grid-column: 2/3;
-  grid-row: 4/5;
+  grid-row: 3/4;
+}
+
+#error_nombre,
+#error_apellido,
+#error_correo {
   background-color: #ff4646bd;
   border: red 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   text-align: center;
 }
 
 #Apellido {
   grid-column: 3/4;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 #input_apellido {
   grid-column: 3/4;
-  grid-row: 3/4;
-  width: 90%;
+  grid-row: 2/3;
   height: 60%;
   background-color: #e5e5e5;
 }
 
 #error_apellido {
   grid-column: 3/4;
-  grid-row: 4/5;
-  background-color: #ff4646bd;
-  border: red 2px solid;
-  font-weight: bold;
-  text-align: center;
+  grid-row: 3/4;
 }
 
 #Correo {
   grid-column: 4/5;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 #input_correo {
   grid-column: 4/5;
-  grid-row: 3/4;
-  width: 95%;
+  grid-row: 2/3;
   height: 60%;
   background-color: #e5e5e5;
 }
 
 #error_correo {
   grid-column: 4/5;
-  grid-row: 4/5;
-  height: 80%;
-  background-color: #ff4646bd;
-  border: red 2px solid;
-  font-weight: bold;
-  text-align: center;
+  grid-row: 3/4;
 }
 
 #Enviar {
-  grid-row: 5/6;
+  grid-row: 4/5;
   grid-column: 3/4;
   width: 70%;
-  height: 60%;
-  margin-top: 8%;
+  height: 50%;
+  margin-top: 6%;
   margin-left: 15%;
   background-color: #999999;
 }
 
-@keyframes input_blur {
-  from {
-    background-color: #e5e5e5;
-  }
-  to {
-    background-color: /* #f2f2f2e0 */ red;
-  }
-}
-
 #alerts_form {
-  grid-column: 1/6;
-  grid-row: 2/6;
+  grid-column: 1/2;
+  grid-row: 2/3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -507,8 +505,8 @@ form > h4 {
 #correo_inscrito {
   background-color: #f8f8f8ec;
   border: black 2px solid;
-  width: 60vw;
-  height: 85%;
+  width: 55vw;
+  height: 95%;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -530,15 +528,19 @@ form > h4 {
 }
 
 #correo_inscrito {
-  grid-template-rows: 50% 20% 15% 15%;
+  grid-template-rows: 55% 20% 25%;
   text-align: center;
   width: 90vw;
   height: 95%;
 }
 
-#correo_inscrito > img {
+#correo_inscrito > p > a {
+  color: black;
+}
+
+.img_correo {
   height: 90%;
-  width: 40%;
+  width: 25%;
 }
 
 /*FORM PARA CORREO*/
