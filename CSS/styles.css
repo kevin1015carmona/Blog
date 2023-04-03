@@ -42,6 +42,7 @@ body {
   grid-row: 1/2;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 li {
@@ -101,7 +102,7 @@ li {
 #icono {
   color: white;
   float: left;
-  margin-left: 5%;
+  margin-left: 5vw;
   height: 80%;
   width: 17%;
   text-align: center;
@@ -440,7 +441,7 @@ form > h4 {
 #error_correo {
   background-color: #ff4646bd;
   border: red 2px solid;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   font-weight: bold;
@@ -576,7 +577,7 @@ form > h4 {
 
 #social > a {
   height: 85%;
-  width: 6%;
+  width: 8vw;
 }
 
 #social > a > img {
